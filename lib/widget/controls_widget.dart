@@ -16,19 +16,43 @@ class ControlsWidget extends StatelessWidget {
   Widget build(BuildContext context) => Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          RaisedButton(
-            onPressed: onClickedPickImage,
-            child: Text('Pick Image'),
+          Container(
+            height: 40,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.grey,
+            ),
+
+            child: FlatButton(
+              onPressed: onClickedPickImage,
+              child: Text('Pick Image',style: TextStyle(color: Colors.white),),
+            ),
           ),
           const SizedBox(width: 12),
-          RaisedButton(
-            onPressed: onClickedScanText,
-            child: Text('Scan For Text'),
+          Container(
+            height: 40,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.grey,
+            ),
+
+            child: FlatButton(
+              onPressed: onClickedScanText,
+              child: Text('Scan For Text',style: TextStyle(color: Colors.white)),
+            ),
           ),
           const SizedBox(width: 12),
-          RaisedButton(
-            onPressed: onClickedClear,
-            child: Text('Clear'),
+          Container(
+            height: 40,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.grey,
+            ),
+
+            child: FlatButton(
+              onPressed: onClickedClear,
+              child: Text('Clear',style: TextStyle(color: Colors.white)),
+            ),
           )
         ],
       );

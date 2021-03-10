@@ -41,6 +41,7 @@ class _TextRecognitionWidgetState extends State<TextRecognitionWidget> {
         ),
       );
 
+
   Widget buildImage() => Container(
         child: image != null
             ? Image.file(image)

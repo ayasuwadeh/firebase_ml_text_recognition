@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  final String title = 'Text Recognition';
+  final String title = 'OCR- Upload an Image';
 
   @override
   Widget build(BuildContext context) => MaterialApp(
@@ -30,7 +30,8 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text(widget.title,style: TextStyle(color: Colors.deepOrange),),
+          backgroundColor: Colors.white,
         ),
         body: Padding(
           padding: const EdgeInsets.all(8),
